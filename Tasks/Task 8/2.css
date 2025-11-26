@@ -1,0 +1,69 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e8f5e9; /* very light SeaGreen background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calculator {
+  background-color: #ffffff; /* white container for contrast */
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(46, 125, 50, 0.2); /* subtle green shadow */
+}
+
+input {
+  width: 100%;
+  height: 60px;
+  font-size: 26px;
+  text-align: right;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #a5d6a7; /* light SeaGreen border */
+  background-color: #f1f8f1; /* very light SeaGreen */
+  color: #2e7d32; /* darker SeaGreen text */
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 70px);
+  gap: 12px;
+}
+
+button {
+  padding: 18px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #a5d6a7; /* light SeaGreen */
+  color: #ffffff; /* white text */
+  transition: background 0.3s, transform 0.1s;
+}
+
+button:hover {
+  background-color: #81c784; /* darker hover shade */
+  transform: scale(1.05);
+}
+
+button.operator {
+  background-color: #4caf50; /* SeaGreen for operators */
+  color: #ffffff;
+}
+
+button.operator:hover {
+  background-color: #388e3c; /* darker green on hover */
+}
+
+button.clear {
+  grid-column: span 4;
+  background-color: #66bb6a; /* lighter green for clear */
+  color: #ffffff;
+}
+
+button.clear:hover {
+  background-color: #43a047; /* darker green on hover */
+}
